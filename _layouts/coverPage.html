@@ -18,7 +18,7 @@ layout: default
 <h2 class="center">{{ lookup.name }}</h2>
 <h1 class="center">{{ lookup.theme }}</h2>
 <div class="gallery frame">
-    <img src="{{ lookup.coverImg }}" alt="{{ lookup.alt }}">
+    <img src="{{ site.baseurl }}{{ lookup.coverImg }}" alt="{{ lookup.alt }}">
     <p class="subtitle">{{ lookup.subtitle }}</p>
 </div>
 {{ content }}

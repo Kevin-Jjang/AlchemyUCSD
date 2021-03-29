@@ -1,10 +1,10 @@
 - name: Home
-  link: https://kevin-jjang.github.io/Alchemy-UCSD
+  link: /
 - name: Issues
-  link: https://kevin-jjang.github.io/Alchemy-UCSD/issues/
+  link: /issues
 - name: Submissions
-  link: https://kevin-jjang.github.io/Alchemy-UCSD/submissions/
+  link: /submissions
 - name: Meet the Team
-  link: https://kevin-jjang.github.io/Alchemy-UCSD/team/
+  link: /team
 - name: Contact Us
-  link: https://kevin-jjang.github.io/Alchemy-UCSD/about/
+  link: /about

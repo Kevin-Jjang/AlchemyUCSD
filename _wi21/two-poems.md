@@ -13,7 +13,7 @@ Nos conocimos en Tinder. Al principio, era difícil entender lo que intentábamo
 
 translatorBio: "macs, también conocide como majo chávez, es un artista y traductor de la ciudad de méxico. @ajoconeme<br>macs, also known as majo chávez, is an artist and translator from mexico city. @ajoconeme"
 
-authorBio: "alyn mare is a poet and dj in so-called tucson, az. their work has appeared in Occulum, Aired, and zine form forever at <a href='www.clubtheory.net'>www.clubtheory.net</a>.<br> alyn mare es poeta y dj en el así llamado tucson, az. su trabajo ha aparecido en Occulum, Aired y siempre en forma de zine en <a href='www.clubtheory.net'>www.clubtheory.net</a>."
+authorBio: "alyn mare is a poet and dj in so-called tucson, az. their work has appeared in Occulum, Aired, and zine form forever at <a href='https://www.clubtheory.net'>www.clubtheory.net</a>.<br> alyn mare es poeta y dj en el así llamado tucson, az. su trabajo ha aparecido en Occulum, Aired y siempre en forma de zine en <a href='https://www.clubtheory.net'>www.clubtheory.net</a>."
 
 excerpt_separator: "<!-- break -->"
 ---

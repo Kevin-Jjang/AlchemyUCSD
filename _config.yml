@@ -31,13 +31,10 @@ github_username:  Kevin-Jjang
 
 collections:
   issuesCoverPage: 
-    permalink: "https://kevin-jjang.github.io/issues/:path/"
+    permalink: "/issues/:path"
     output: true
-  # issues:
-  #   permalink: "/issues/:path/"
-  #   output: true
   wi21:
-    permalink: "https://kevin-jjang.github.io/issues/wi21/:path/"
+    permalink: "/issues/wi21/:path"
     output: true
 
 defaults:

@@ -1,3 +1,5 @@
+---
+---
 body {
     margin: 0px;
     font-family: PlayfairDisplay;
@@ -5,7 +7,7 @@ body {
 
 @font-face {
     font-family: PlayfairDisplay;
-    src: url("/assets/font/PlayfairDisplay-VariableFont_wght.ttf");
+    src: url("{{ site.baseurl }}/assets/font/PlayfairDisplay-VariableFont_wght.ttf");
 }
 
 h3 {

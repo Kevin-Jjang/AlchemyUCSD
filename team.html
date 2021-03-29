@@ -4,7 +4,7 @@ layout: default
 <p class="teamTitle">Current Team</p>
 <!-- Editor in Chief -->
 <div class="containerProfile" id="editorInChief">
-    <img src="/assets/img/team/AlchemyLogo2012Lower.jpg" alt="Neon Mashurov">
+    <img src="{{ site.baseurl }}/assets/img/team/AlchemyLogo2012Lower.jpg" alt="Neon Mashurov">
     <p class="name">Neon Mashurov</p>
     <p class="role">Editor in Chief</p>
     <p class="introduction">Email me a short bio to write here (links are good too). There does not have to be a limit because this website is fully customizable. The current box can hold about 190 characters. (spacing on EIC needs to be fixed)</p>
@@ -13,7 +13,7 @@ layout: default
 <div class="profiles">
     {% for member in site.data.currentTeam %}
     <div class="containerProfile">
-        <img src="{{ member.portrait }}" alt="{{ member.name }}">
+        <img src="{{ site.baseurl }}{{ member.portrait }}" alt="{{ member.name }}">
         <p class="name">{{ member.name }}</p>
         <p class="role">{{ member.role }}</p>
         <p class="introduction">{{ member.intro }}</p>
@@ -24,7 +24,7 @@ layout: default
 <p class="teamTitle">Faculty Board</p>
 <!-- Director -->
 <div class="containerProfile" id="editorInChief">
-    <img src="" alt="">
+    <img src="{{ site.baseurl }}/assets/img/team/AlchemyLogo2012Lower.jpg" alt="Amelia Glaser">
     <p class="name">Amelia Glaser</p>
     <p class="role">Faculty Director<br>2011-Present</p>
     <p class="introduction"><a href="https://literature.ucsd.edu/">Literature</a></p>

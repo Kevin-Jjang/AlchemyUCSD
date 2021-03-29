@@ -10,13 +10,13 @@ title: Winter 2021
 
 {% for cover in cover %}
     <div class="post">
-        <a href="{{ cover.url }}">"{{ cover.mainTitle }}" - by {{ cover.author }}</a>
+        <a href="{{ site.baseurl }}{{ cover.url }}">"{{ cover.mainTitle }}" - by {{ cover.author }}</a>
     </div><br>
 {% endfor %}
 
 {% for letter in letter %}
     <div class="post">
-        <a href="{{ letter.url }}">"{{ letter.mainTitle }}" - by {{ letter.author }}</a>
+        <a href="{{ site.baseurl }}{{ letter.url }}">"{{ letter.mainTitle }}" - by {{ letter.author }}</a>
     </div>
 {% endfor %}
 
@@ -24,7 +24,7 @@ title: Winter 2021
     <h2>Poetry</h2>
     {% for poem in poems %}
             <div class="post">
-                <a href="{{ poem.url }}">"{{ poem.mainTitle }}" - Translated by {{ poem.translators }}</a>
+                <a href="{{ site.baseurl }}{{ poem.url }}">"{{ poem.mainTitle }}" - Translated by {{ poem.translators }}</a>
                 <p>Originally Authored by {{ poem.originalAuthor }}, from the {{ poem.tag }}</p>
             </div>
     {% endfor %}
@@ -34,7 +34,7 @@ title: Winter 2021
     <h2>Prose</h2>
     {% for post in prose %}
     <div class="post">
-        <a href="{{ post.url }}">"{{ post.mainTitle }}" - Translated by {{ post.translators }}</a>
+        <a href="{{ site.baseurl }}{{ post.url }}">"{{ post.mainTitle }}" - Translated by {{ post.translators }}</a>
         <p>Originally Authored by {{ post.originalAuthor }}, from the {{ post.tag }}</p>
     </div>
     {% endfor %}
@@ -44,7 +44,7 @@ title: Winter 2021
     <h2>Visual Art</h2>
     {% for post in art %}
     <div class="post">
-        <a href="{{ post.url }}">"{{ post.mainTitle }}" - by {{ post.author }}</a>
+        <a href="{{ site.baseurl }}{{ post.url }}">"{{ post.mainTitle }}" - by {{ post.author }}</a>
     </div>
     {% endfor %}
 {% endif %}

@@ -5,15 +5,15 @@ layout: default
 <ul>
     {% for issue in site.data.issues %}
     <li class="issueBox">
-        <img class="coverImage" src="{{ issue.coverImg }}">
+        <img class="coverImage" src="{{ site.baseurl }}{{ issue.coverImg }}">
         <div class="issueInfo">
             <p class="issueNum">Issue {{ issue.issueNo }}</p>
             <p class="issueTitle">{{ issue.name }}</p>
             <p class="issueTheme">{{ issue.theme }}</p>
             {% if issue.link contains ".pdf" %}
-            <a href="{{ issue.link }}" target="_blank">Read Here (pdf)</a>
+            <a href="{{ site.baseurl }}{{ issue.link }}" target="_blank">Read Here (pdf)</a>
             {% else %}
-            <a href="{{ issue.link }}">Read Here</a>
+            <a href="{{ site.baseurl }}{{ issue.link }}">Read Here</a>
             {% endif %}
         </div>
     </li>
