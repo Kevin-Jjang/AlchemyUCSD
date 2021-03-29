@@ -24,20 +24,20 @@ description: >- # this means to ignore newlines until "baseurl:"
   Alchemy is an experimental translation journal 
   based in UCSD's Literature and Linguistics Departments 
   and is edited and published by UCSD students.
-baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://alchemy.ucsd.edu" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/Alchemy-UCSD" # the subpath of your site, e.g. /blog
+url: "https://kevin-jjang.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: alchemyjournal
 github_username:  Kevin-Jjang
 
 collections:
   issuesCoverPage: 
-    permalink: "/issues/:path/"
+    permalink: "{{ site.baseurl }}/issues/:path/"
     output: true
   # issues:
   #   permalink: "/issues/:path/"
   #   output: true
   wi21:
-    permalink: "/issues/wi21/:path/"
+    permalink: "{{ site.baseurl }}/issues/wi21/:path/"
     output: true
 
 defaults:

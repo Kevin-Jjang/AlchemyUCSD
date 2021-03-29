@@ -1,10 +1,10 @@
 - name: Home
-  link: /
+  link: "{{ site.baseurl }}"
 - name: Issues
-  link: /issues/
+  link: "{{ site.baseurl }}/issues/"
 - name: Submissions
-  link: /submissions/
+  link: "{{ site.baseurl }}/submissions/"
 - name: Meet the Team
-  link: /team/
+  link: "{{ site.baseurl }}/team/"
 - name: Contact Us
-  link: /about/
+  link: "{{ site.baseurl }}/about/"
