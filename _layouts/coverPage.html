@@ -1,0 +1,24 @@
+---
+layout: default
+---
+{% if page.homepage %}
+    <h1 class="center">Alchemy</h1>
+    <h4 class="center">A Journal of Translation at UCSD</h4>
+{% endif %}
+
+{% assign lookup = "{{page.title}}" %}
+{% for issue in site.data.issues %}
+    {% if issue.name == page.title %}
+        {% assign lookup = issue %}
+        {% break %}
+    {% endif %}
+{% endfor %}
+
+<h2 class="center">Issue {{ lookup.issueNo }}</h2>
+<h2 class="center">{{ lookup.name }}</h2>
+<h1 class="center">{{ lookup.theme }}</h2>
+<div class="gallery frame">
+    <img src="{{ lookup.coverImg }}" alt="{{ lookup.alt }}">
+    <p class="subtitle">{{ lookup.subtitle }}</p>
+</div>
+{{ content }}

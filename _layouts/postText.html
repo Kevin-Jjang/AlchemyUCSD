@@ -1,0 +1,41 @@
+---
+layout: default
+---
+
+{% assign contentArray = page.content | markdownify | split: page.excerpt_separator %}
+<h1>{{ page.mainTitle }}</h1>
+<h3>Translated by {{ page.translators }}</h3>
+<h3>From the {{ page.tag }} </h3>
+<pre class="text">
+    {{ contentArray.first }}
+</pre>
+
+<h1>{{ page.origTitle }}</h1>
+<h3>Authored by {{ page.originalAuthor }}</h3>
+<pre class="text">
+    {{ contentArray.last }}
+</pre>
+
+{% if page.translatorNote %}
+        <p class="bio">
+            <strong>Translator's Note</strong><br>
+            {{ page.translatorNote }}
+        </p>
+{% endif %}
+
+{% if page.translators.size == 1 %}
+    <p class="bio">
+        <strong>Translator's Biography</strong><br>
+        {{ page.translatorBio }}
+    </p>
+{% else %}
+    <p class="bio">
+        <strong>Translators' Biography</strong><br>
+        {{ page.translatorBio }}
+    </p>
+{% endif %}
+
+<p class="bio">
+    <strong>Author's Biography</strong><br>
+    {{ page.authorBio }}
+</p>

@@ -1,0 +1,8 @@
+<header>
+    <h1 class="header-title">ALCHEMY</h1>
+    <nav class="navbar">
+      {% for item in site.data.navigation %}
+        <a href="{{ item.link }}">{{ item.name }}</a>
+      {% endfor %}
+    </nav>
+</header>

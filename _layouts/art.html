@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<h1>{{ page.mainTitle }}</h1>
+<h3>By {{ page.author }} </h3>
+{{ content }}
+
+{% if page.note %}
+        <!-- <p class="note"></p> -->
+        <p class="bio">
+            <strong>Artist's Note</strong><br>
+            {{ page.note }}
+        </p>
+{% endif %}
+
+<p class="bio">
+    <strong>Biography</strong><br>
+    {{ page.bio }}
+</p>

@@ -1,0 +1,50 @@
+---
+layout: coverPage 
+title: Winter 2021
+---
+{% assign cover = site.wi21 | where: "type", "Cover Art" %}
+{% assign letter = site.wi21 | where: "type", "Letter from the Editor" %}
+{% assign poems = site.wi21 | where: "type", "Poetry" %}
+{% assign prose = site.wi21 | where: "type", "Prose" %}
+{% assign art = site.wi21 | where: "type", "Art" %}
+
+{% for cover in cover %}
+    <div class="post">
+        <a href="{{ cover.url }}">"{{ cover.mainTitle }}" - by {{ cover.author }}</a>
+    </div><br>
+{% endfor %}
+
+{% for letter in letter %}
+    <div class="post">
+        <a href="{{ letter.url }}">"{{ letter.mainTitle }}" - by {{ letter.author }}</a>
+    </div>
+{% endfor %}
+
+{% if poems.size > 0 %}
+    <h2>Poetry</h2>
+    {% for poem in poems %}
+            <div class="post">
+                <a href="{{ poem.url }}">"{{ poem.mainTitle }}" - Translated by {{ poem.translators }}</a>
+                <p>Originally Authored by {{ poem.originalAuthor }}, from the {{ poem.tag }}</p>
+            </div>
+    {% endfor %}
+{% endif %}
+
+{% if prose.size > 0 %}
+    <h2>Prose</h2>
+    {% for post in prose %}
+    <div class="post">
+        <a href="{{ post.url }}">"{{ post.mainTitle }}" - Translated by {{ post.translators }}</a>
+        <p>Originally Authored by {{ post.originalAuthor }}, from the {{ post.tag }}</p>
+    </div>
+    {% endfor %}
+{% endif %}
+
+{% if art.size > 0 %}
+    <h2>Visual Art</h2>
+    {% for post in art %}
+    <div class="post">
+        <a href="{{ post.url }}">"{{ post.mainTitle }}" - by {{ post.author }}</a>
+    </div>
+    {% endfor %}
+{% endif %}

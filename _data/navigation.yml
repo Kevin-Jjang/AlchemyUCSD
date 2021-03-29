@@ -1,0 +1,10 @@
+- name: Home
+  link: /
+- name: Issues
+  link: /issues/
+- name: Submissions
+  link: /submissions/
+- name: Meet the Team
+  link: /team/
+- name: Contact Us
+  link: /about/

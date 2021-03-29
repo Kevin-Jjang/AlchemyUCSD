@@ -1,0 +1,433 @@
+body {
+    margin: 0px;
+    font-family: PlayfairDisplay;
+}
+
+@font-face {
+    font-family: PlayfairDisplay;
+    src: url("/assets/font/PlayfairDisplay-VariableFont_wght.ttf");
+}
+
+h3 {
+    color: #a2230a;
+}
+header {
+    padding: 10px 0px;
+    background-color: #db4848;
+    min-width: 100%;
+    height: fit-content;
+    text-align: center;
+    color: white;
+}
+
+header h1 {
+    margin: 0px;
+    padding: 10px;
+    font-size: 2em;
+}
+ul {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+nav {
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    text-align: center;
+    font-size: 1.25em;
+    background-color: #ffe5b679;
+}
+
+.navbar a {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 3px;
+    padding-bottom: 2px;
+    border-bottom: 2px solid black;
+    color: white;
+    text-decoration: none;
+
+}
+
+.navbar a:hover {
+    background-color: #ffe5b6;
+}
+
+/* ---------------------------------------
+            FOOTER
+---------------------------------------  */
+footer {
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    bottom: 0px;
+    margin-top: 5rem;
+    max-width: 100vw;
+    min-height: 200px;
+    background-color: #DB4848;
+    border-top: 10px solid #EBCB2A;
+    color: white;
+}
+
+.socialLinks {
+    position: absolute;
+    bottom: 30px;
+    right: 50px;
+}
+
+.socialLinks p {
+    display: block;
+    margin-left: 175px;
+    margin-bottom: 5px;
+    font-size: 1.1em;
+}
+
+footer a {
+    display: inline-block;
+    margin: 0px 5px;
+    width: 32px;
+    height: 32px;
+}
+
+footer a img {
+    width: inherit;
+    height: inherit;
+}
+
+#ucsdLit {
+    width: 150px;
+    height: 28px;
+}
+#ucsdLogo {
+    width: 150px;
+    height: 28px;
+}
+#twitter {
+    width: 32px;
+    height: 28px;
+}
+
+footer .copyrights {
+    position: absolute;
+    top: auto;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 5px;
+    text-align: center;
+}
+
+/* Meet the Team */
+.teamTitle {
+    margin: 2rem 0px;
+    text-align: center;
+    font-size: 3em;
+}
+
+#alumni {
+    margin-bottom: 0.25em;
+}
+
+.teamSubtitle {
+    margin-top: 16px;
+    text-align: center;
+    font-size: 2em;
+}
+#editorInChief {
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+}
+
+.role {
+    color: #a2230a;
+    margin: 5px 0px;
+}
+
+.introduction {
+    text-align: left;
+}
+.profiles {
+    display: grid;
+    margin: 10px auto;
+    max-width: 960px;
+    grid-template-columns: 300px 300px 300px;
+    column-gap: 24px;
+    grid-template-rows: auto;
+    row-gap: 10px;
+}
+
+.containerProfile {
+    /* margin: 10px 10px; */
+    /* padding: 10px 10px; */
+    min-width: 300px;
+    height: 375px;
+    border: 1px solid black;
+    background-color: #F9F9F9;
+    text-align: center;
+}
+
+.containerProfile img {
+    margin-top: 10px;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+}
+
+.containerProfile p {
+    margin: 8px 10px;
+}
+
+.containerProfile .name {
+    font-size: 24px;
+    color: #333;
+}
+
+.containerProfile .role {
+    font-size: 18px;
+}
+
+.goldProfiles {
+    margin: 10px 0px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px;
+    display: grid;
+    grid-template-columns: 225px 225px 225px 225px;
+    grid-template-rows: auto;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.goldBar {
+    border: 3px solid #EBCB2A;
+    background-color: #F9F9F9;
+    text-align: center;
+}
+
+.goldBar .name {
+    margin: 10px;
+    font-size: 1.25em;
+}
+.goldProfiles .role {
+    font-size: 1.1em;
+}
+
+.goldBar:hover {
+    transform: scale(1.1);
+}
+
+/* Submissions Page */
+.submitBtn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+    padding: 5px 5rem;
+    height: fit-content;
+    width: fit-content;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 2.5em;
+    background: 
+        linear-gradient(135deg, #ff4040c5 25%, #ffdf5fbe),
+        linear-gradient(135deg, #8b0000bd, #ff4040af 66%);
+
+}
+ul .list {
+    list-style-type: disc;
+}
+
+.centerParagraph {
+    margin-bottom: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 980px;
+    font-size: 1.2rem;
+}
+
+.themeDescription {
+    padding: 1em;
+    background-color: #F0F0F0;
+    box-shadow: 8px 8px 0px #757575;
+    border-radius: 0px 20px 20px 20px;
+    font-size: 1.3rem;
+}
+
+.submitBtn:hover {
+    background: 
+        linear-gradient(135deg, #ff4040c5 25%, #ffdf5fbe),
+        linear-gradient(135deg, #8b0000bd, #ff4040af 66%);
+    background-size: 400% 400%;
+    -webkit-animation: gradientMove 3s ease;
+    -moz-animation: gradientMove 3s ease;
+    -o-animation: gradientMove 3s ease;
+    animation: gradientMove 3s ease;
+}
+
+@-webkit-keyframes gradientMove {
+    0% { background-position:0% 50% }
+    50% { background-position:100% 50% }
+    100% { background-position:0% 50% }
+}
+@-moz-keyframes gradientMove {
+    0% { background-position:0% 50% }
+    50% { background-position:100% 50% }
+    100% { background-position:0% 50% }
+}
+@-o-keyframes gradientMove {
+    0% { background-position:0% 50% }
+    50% { background-position:100% 50% }
+    100% { background-position:0% 50% }
+}
+@keyframes gradientMove {
+    0% { background-position:0% 50% }
+    50% { background-position:100% 50% }
+    100% { background-position:0% 50% }
+}
+
+/* Contact Form */
+form {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10rem;
+    padding: 20px;
+    width: 600px;
+    border: 3px solid #333;
+    background-color: #F9F9F9;
+}
+
+form p {
+    margin: 0;
+    font-size: 2rem;
+}
+.rowContainer {
+    display: flex;
+}
+
+.rowContainer div {
+    flex-grow: 1;
+}
+label {
+    display: block;
+    font-size: 1.5rem;
+}
+input {
+    margin: 10px 0px;
+    display: block;
+    width: 80%;
+    height: 2rem;
+}
+
+#message {
+    width: 100%;
+    height: 10em;
+}
+
+input[type=submit] {
+    width: 100px;
+}
+/* Issues Page */
+/* div {
+    font-size: 1.5em;
+} */
+
+.issueBox {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    max-width: 1280px;
+    background: linear-gradient(160deg, #f9f9f9 60%, rgb(241, 233, 233));
+    border: 3px solid rgb(105, 22, 7);
+}
+
+.coverImage {
+    display: block;
+    max-width: 600px;
+    max-height: 300px;
+    height: auto;
+}
+
+.coverArt {
+    display: block;
+    box-sizing: content-box;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    max-width: 900px;
+}
+.issueInfo {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.post a {
+    color: #a2230a;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+pre {
+    font-family: inherit;
+}
+
+.bio {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+}
+
+
+
+/* Content */
+.contentWrapper {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 960px;
+}
+
+.rightToLeft {
+    text-align: right;
+}
+
+.text {
+    font-size: 1.1em;
+}
+
+.center {
+    text-align: center;
+}
+
+.gallery {
+    display: block;
+    box-sizing: border-box;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: #f1f1f1;
+    align-items: center;
+    text-align: center;
+}
+.gallery img {
+    max-width: 900px;
+}
+
+.gallery p {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    padding: 0rem;
+}
+
+.frame {
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}

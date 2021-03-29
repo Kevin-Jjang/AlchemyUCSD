@@ -1,0 +1,52 @@
+---
+layout: default
+---
+<h1>{{ page.mainTitle }}</h1>
+
+{% assign contentArray = page.content | markdownify | split: page.excerpt_separator %}
+{% assign len = contentArray.size | minus: 1 %}
+
+{% for i in (0..len) %}
+    {% assign div = i | divided_by: 2 %}
+    {% assign mod = i | modulo: 2 %}
+    {% if mod == 0 %}
+        <h3>{{ page.titles[div] }}</h3>
+        <h3>Translated by {{ page.translators }}</h3>
+        <h3>From the {{ page.tag }} </h3>
+
+        <pre class="text">
+            {{ contentArray[i] }}
+        </pre>
+    {% else %}
+        <h3>{{ page.origTitles[div] }}</h1>
+        <h4>Authored by {{ page.originalAuthor }}</h3>
+        <pre class="text">
+            {{ contentArray[i] }}
+        </pre>
+    {% endif %}
+    <hr>
+{% endfor %}
+
+{% if page.translatorNote %}
+        <p class="bio">
+            <strong>Translator's Note</strong><br>
+            {{ page.translatorNote }}
+        </p>
+{% endif %}
+
+{% if page.translators.size == 1 %}
+    <p class="bio">
+        <strong>Translator's Biography</strong><br>
+        {{ page.translatorBio }}
+    </p>
+{% else %}
+    <p class="bio">
+        <strong>Translators' Biography</strong><br>
+        {{ page.translatorBio }}
+    </p>
+{% endif %}
+
+<p class="bio">
+    <strong>Author's Biography</strong><br>
+    {{ page.authorBio }}
+</p>

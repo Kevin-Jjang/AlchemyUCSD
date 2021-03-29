@@ -1,0 +1,79 @@
+---
+layout: default
+---
+<p class="teamTitle">Current Team</p>
+<!-- Editor in Chief -->
+<div class="containerProfile" id="editorInChief">
+    <img src="/assets/img/team/AlchemyLogo2012Lower.jpg" alt="Neon Mashurov">
+    <p class="name">Neon Mashurov</p>
+    <p class="role">Editor in Chief</p>
+    <p class="introduction">Email me a short bio to write here (links are good too). There does not have to be a limit because this website is fully customizable. The current box can hold about 190 characters. (spacing on EIC needs to be fixed)</p>
+</div>
+
+<div class="profiles">
+    {% for member in site.data.currentTeam %}
+    <div class="containerProfile">
+        <img src="{{ member.portrait }}" alt="{{ member.name }}">
+        <p class="name">{{ member.name }}</p>
+        <p class="role">{{ member.role }}</p>
+        <p class="introduction">{{ member.intro }}</p>
+    </div>
+    {% endfor %}
+</div>
+
+<p class="teamTitle">Faculty Board</p>
+<!-- Director -->
+<div class="containerProfile" id="editorInChief">
+    <img src="" alt="">
+    <p class="name">Amelia Glaser</p>
+    <p class="role">Faculty Director<br>2011-Present</p>
+    <p class="introduction"><a href="https://literature.ucsd.edu/">Literature</a></p>
+</div>
+
+<!-- Faculty Board -->
+<div class="goldProfiles">
+    <div class="goldBar">
+        <p class="name">Gabriella Caballero</p>
+        <p class="role">Faculty Advisor</p>
+    </div>
+    <div class="goldBar">
+        <p class="name">Ari Larissa Heinrich</p>
+        <p class="role">Faculty Advisor</p>
+    </div>
+    <div class="goldBar">
+        <p class="name">Jin Lee</p>
+        <p class="role">Faculty Advisor</p>
+    </div>
+    <div class="goldBar">
+        <p class="name">Pasquale Verdicchio</p>
+        <p class="role">Faculty Advisor</p>
+    </div>
+</div>
+
+<p class="teamTitle" id="alumni">Alumni</p>
+
+<!-- Editors in Chief -->
+<p class="teamSubtitle">Editors In Chief</p>
+<div class="goldProfiles">
+    {% for alumni in site.data.alumniEiC %}
+    <div class="goldBar">
+        <p class="name">{{ alumni.name }}</p>
+        <p class="role">{{ alumni.date }}</p>
+    </div>
+    {% endfor %}
+</div>
+<!-- Editors -->
+<p class="teamSubtitle">Editors</p>
+<div class="goldProfiles">
+    {% for alumni in site.data.alumni %}
+    <div class="goldBar">
+        <p class="name">{{ alumni.name }}</p>
+        <p class="role">
+            {% if alumni.role %}
+                {{ alumni.role }}
+            {% endif %}
+            {{ alumni.date }}
+        </p>
+    </div>
+    {% endfor %}
+</div>
