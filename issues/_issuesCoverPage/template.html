@@ -1,14 +1,15 @@
 ---
-layout: coverPage
-title: Winter 2021
-homepage: true
+layout: coverPage 
+title: <!-- Term 20## -->
 ---
-
-{% assign cover = site.wi21 | where: "type", "Cover Art" %}
-{% assign letter = site.wi21 | where: "type", "Letter from the Editor" %}
-{% assign poems = site.wi21 | where: "type", "Poetry" %}
-{% assign prose = site.wi21 | where: "type", "Prose" %}
-{% assign art = site.wi21 | where: "type", "Art" %}
+<!-- assign item = site.term## | where:... -->
+{% assign cover = site.TODO | where: "type", "Cover Art" %}
+{% assign letter = site.TODO | where: "type", "Letter from the Editor" %}
+{% assign poems = site.TODO | where: "type", "Poetry" %}
+{% assign prose = site.TODO | where: "type", "Prose" %}
+{% assign art = site.TODO | where: "type", "Art" %}
+<!-- For new post types, create a new assignment and add the type name to the post. -->
+<!-- Then create a custom block of code like the ones below. -->
 
 <h2>Cover Art</h2>
 {% for cover in cover %}

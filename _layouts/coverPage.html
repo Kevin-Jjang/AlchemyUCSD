@@ -6,8 +6,8 @@ layout: default
     <h4 class="center">A Journal of Translation at UCSD</h4>
 {% endif %}
 
-{% assign lookup = "{{page.title}}" %}
-{% for issue in site.data.issues %}
+{% assign lookup = "{{ page.title }}" %}
+{% for issue in site.data.issuesCoverPage %}
     {% if issue.name == page.title %}
         {% assign lookup = issue %}
         {% break %}

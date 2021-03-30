@@ -1,8 +1,9 @@
 ---
-layout: postText
+layout: poetry
 mainTitle: An Attempt at Jealousy
-translators: "Aster Fialla & Lev Nikulin"
-origTitle: Попытка ревности
+titles: ["Ligia"]
+translators: ["Aster Fialla & Lev Nikulin"]
+origTitles: ["Попытка ревности"]
 originalAuthor: "Marina Tsvetaeva"
 type: Poetry
 tag: Russian
@@ -10,10 +11,10 @@ tag: Russian
 translatorNote: "This submission is an experiment in co-translation and co-creation across languages and skillsets, taking as its subject Tsvetaeva’s often-translated poem “An Attempt at Jealousy [Popytka revnosti].” To produce this piece, Lev provided a precise prose translation of the poem that Aster then versified to match the meter and rhyme scheme of the original; we then refined the text together to attempt to capture Tsvetaeva’s fine shades of meaning and high emotional drama.<br><br>
 We consider this collective approach especially well-suited to Tsvetaeva, who engaged in poetic exchange and translation herself. She established poetic connections with poets both dead (Pushkin) and living (Pasternak, Rilke), famously forging her blistering cycle “Girlfriend [Podruga]” after her tumultuous relationship with poet Sophia Parnok. She translated from languages she knew and others she did not (Polish, Yiddish, Spanish). As Tsvetaeva entered into poetic conversations with other poets, we have tried to do so with her and with the others who have tackled her work in general and this piece in particular. In this translation, we most prioritized the communication of the vicious, biting tone of the original, searching for an emotional throughline which would carry Tsvetaeva’s bitter and acerbic breakup poem to the reader across language and time period. "
 
-translatorBio: "Aster Fialla (se/er) is a freelance illustrator, poet, and game developer in roughly that order. Check out samples of the former two at asterfialla.com and the latter at <a href='https://pieartsy.itch.io'>pieartsy.itch.io</a>.<br><br>
-Lev Nikulin (he/they) is an academic specializing in horror, the Gothic, science fiction, genre studies, and LGBT studies in 19th and 20th century Russian literature and film. He currently works as a Postgraduate Research Associate and Lecturer at the Department of Slavic Languages and Literatures at Princeton University. Tsvetaeva’s The Swain [Molodets] is his favorite vampire story. Follow him at his website, <a href='https://levnikulin.com'>levnikulin.com</a>."
+translatorBio: "<strong>Aster Fialla</strong> (se/er) is a freelance illustrator, poet, and game developer in roughly that order. Check out samples of the former two at <a href='https://asterfialla.com'>asterfialla.com</a> and the latter at <a href='https://pieartsy.itch.io'>pieartsy.itch.io</a>.<br><br>
+<strong>Lev Nikulin</strong> (he/they) is an academic specializing in horror, the Gothic, science fiction, genre studies, and LGBT studies in 19th and 20th century Russian literature and film. He currently works as a Postgraduate Research Associate and Lecturer at the Department of Slavic Languages and Literatures at Princeton University. Tsvetaeva’s The Swain [Molodets] is his favorite vampire story. Follow him at his website, <a href='https://levnikulin.com'>levnikulin.com</a>."
 
-authorBio: "Marina Tsvetaeva (1892-1941) is a monumental figure within Russian poetry, remembered for her layered and intricate wordplay, audacious explorations of the highs and lows of emotions and relationships, and more recently for her poetic experimentation with gender and sexuality. Born into a wealthy family, she started a career as a poet, witnessed the Russian Revolution of 1917, then later left the Soviet Union for Europe in 1922. In emigration, she lived in poverty but produced some of her finest work. In 1939, she returned to the USSR, where her family experienced hardship under Stalin’s regime; her daughter was arrested and her husband executed. She was evacuated in 1941 and died of suicide in Yelabuga, Tatar ASSR."
+authorBio: "<strong>Marina Tsvetaeva</strong> (1892-1941) is a monumental figure within Russian poetry, remembered for her layered and intricate wordplay, audacious explorations of the highs and lows of emotions and relationships, and more recently for her poetic experimentation with gender and sexuality. Born into a wealthy family, she started a career as a poet, witnessed the Russian Revolution of 1917, then later left the Soviet Union for Europe in 1922. In emigration, she lived in poverty but produced some of her finest work. In 1939, she returned to the USSR, where her family experienced hardship under Stalin’s regime; her daughter was arrested and her husband executed. She was evacuated in 1941 and died of suicide in Yelabuga, Tatar ASSR."
 
 excerpt_separator: "<!-- break -->"
 ---

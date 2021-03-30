@@ -25,13 +25,13 @@ different continents, and in three different languages. Now, from a fourth count
 fourth language—I’m creating this written record. Perhaps this process doesn’t disrupt the natural state of the
 narrative as much as it echoes and embodies it.'
 
-translatorBio: "Reem Taşyakan is currently a second year PhD student in the UCSD Literature Department. In her research,
+translatorBio: "<strong>Reem Taşyakan</strong> is currently a second year PhD student in the UCSD Literature Department. In her research,
 she focuses on Arab-American literature, exploring orientalism, cultural translation, and representations of the Arab
 world and Arab culture in Arab-American fiction. Reem was born in the US but speaks Arabic and has traveled to several
 parts of the Middle East and North Africa. In addition to her other academic pursuits, Reem writes fiction and poetry,
 translates works from Arabic into English, and works as a TA in the Making of the Modern World program."
 
-authorBio: "The speaker of this oral transmission was Reem’s maternal grandmother, Yanina Koubatski. She was born in
+authorBio: "The speaker of this oral transmission was Reem’s maternal grandmother, <strong>Yanina Koubatski</strong>. She was born in
 Warsaw, Poland in 1925. In 1939, she was captured by Soviet forces and taken to a labor camp in Siberia where she
 remained until WWII ended in 1945. After being freed from the camp, she migrated to Palestine with her young daughter,
 Reem’s mother Christine, who had been born in the camp in 1944. Yanina then trained to be a nurse and began to work at a
@@ -40,12 +40,11 @@ more children with. Ibrahim was the man Christine came to know as her father."
 
 excerpt_separator: "<!-- break -->"
 ---
-{% assign contentArray = page.content | markdownify | split: page.excerpt_separator %}
 <h1>{{ page.mainTitle }}</h1>
 <h3>Translation of an oral transmission between a mother and daughter. </h3>
 <h3>Originally narrated by {{ page.originalAuthor}}. Translated by {{ page.translators }}</h3>
 <h3>From the {{ page.tag }} </h3>
-<div class="text">
+<div class="text italics">
     <p>Chrisho, my daughter, I’m going to tell you about what happened to me, but this will be the only time I  go into any detail about it. It’s too hard for me to talk about. It feels too much like I’m reliving it when I  do. But I want you to know about my journey. </p>
     <p>Back in Warsaw, in September of 1939 when I was 14, my father was taken prisoner by the Soviets.  He’d been an official in the Polish government for years and was implicated because of that. </p>
     <p>In December of 1939, while I was in school one day, two Soviet military officers entered my classroom  and asked to see me and one of my classmates. My classmate’s father had been arrested in September  as well. We followed the officers into the hallway and they immediately marched us outside into the  cold. We trudged through some snow that led to their black sedan. They made us get inside. </p>
@@ -65,6 +64,8 @@ excerpt_separator: "<!-- break -->"
     alt="Palestine, 1947 - Reem Taşyakan">
 <p class="subtitle">Palestine, 1947</p>
 </div>
+
+<hr>
 
 {% if page.translatorNote %}
         <p class="bio">
