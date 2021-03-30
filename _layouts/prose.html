@@ -1,19 +1,43 @@
 ---
 layout: default
 ---
-{% assign contentArray = page.content | markdownify | split: page.excerpt_separator %}
 <h1>{{ page.mainTitle }}</h1>
-<h3>Translated by {{ page.translators }}</h3>
-<h3>From the {{ page.tag }} </h3>
-<div class="text">
-    {{ contentArray.first }}
-</div>
 
-<h1>{{ page.origTitle }}</h1>
-<h3>Authored by {{ page.originalAuthor }}</h3>
-<div class="text {% if page.class %}{{ page.class }}{% endif %}">
-    {{ contentArray.last }}
-</div>
+{% assign contentArray = page.content | markdownify | split: page.excerpt_separator %}
+{% assign len = contentArray.size | minus: 1 %}
+
+{% for i in (0..len) %}
+    {% assign div = i | divided_by: 2 %}
+    {% assign mod = i | modulo: 2 %}
+    {% if mod == 0 %}
+        {% if len > 1 %}
+        <h2>{{ page.titles[div] }}</h2>
+        {% endif %}
+        <h3>Translated by {{ page.translators }}</h3>
+        <h3>From the {{ page.tag }} </h3>
+
+        <div class="text">
+            {{ contentArray[i] }}
+        </div>
+    {% else %}
+        <h2 class="{{ page.classes }}">{{ page.origTitles[div] }}</h2>
+        <h3 class="{{ page.classes }}">Authored by {{ page.originalAuthor }}</h3>
+        <div class="text {{ page.classes }}">
+            {{ contentArray[i] }}
+        </div>
+    {% endif %}
+    <hr>
+{% endfor %}
+
+
+
+
+
+
+
+
+
+
 
 {% if page.translatorNote %}
         <p class="bio">

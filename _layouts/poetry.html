@@ -10,17 +10,19 @@ layout: default
     {% assign div = i | divided_by: 2 %}
     {% assign mod = i | modulo: 2 %}
     {% if mod == 0 %}
-        <h3>{{ page.titles[div] }}</h3>
+        {% if len > 1 %}
+        <h2>{{ page.titles[div] }}</h2>
+        {% endif %}
         <h3>Translated by {{ page.translators }}</h3>
         <h3>From the {{ page.tag }} </h3>
 
-        <pre class="text">
+        <pre class="text {{ page.classes }}">
             {{ contentArray[i] }}
         </pre>
     {% else %}
-        <h3>{{ page.origTitles[div] }}</h1>
-        <h4>Authored by {{ page.originalAuthor }}</h3>
-        <pre class="text">
+        <h2>{{ page.origTitles[div] }}</h2>
+        <h3>Authored by {{ page.originalAuthor }}</h3>
+        <pre class="text {{ page.classes }}">
             {{ contentArray[i] }}
         </pre>
     {% endif %}

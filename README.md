@@ -46,30 +46,36 @@ Jekyll is an open source static-site generator that makes it easy to write blog 
 # Organizational Design
 
 ```
-AlchemyUCSD (root)
+AlchemyUCSD
 | 
 ├── _data               # Update .yml files as editors and issues are updated
 ├── _includes           # (Ignore) Header/footer templates
 ├── _layouts            # Match a layout to a post, or create a custom post in HTML
 ├── assets              # Upload images, pdfs, etc. in here
-|   └──+ 
-|      ├── css
-|      ├── font
-|      ├── img          
-|      ├── js           # (Ignore) email me animation designs and I'll make them
-|      ├── pdf
-├── _issuesCoverPage
-|   └── term##.html     # The cover page for the term##
-├── _term##             # Where all posts for the term## should be stored
+|   ├── css
+|   ├── font
+|   ├── img 
+|   |   └── term##      # Put images in the issue folder, may want to group artist's imgs
+|   ├── js              # (Ignore) Email me animation designs and I'll make them
+|   └── pdf
 |
-├── .github             # (Ignore) For CI/CD Pipeline 
+├── issues                 # The collections to reference issues
+|   ├── _issuesCoverPage   # The directory containing all cover pages
+|   |   └── term##.html    # The cover page for the term##
+|   └── _term##            # The directory containing all term## pages in the issue
+|       ├── (cover).html   # The cover art (rename to title)         
+|       ├── letter-from-the-editor.html
+|       └── posts.md
+|
+├── .github             # (Ignore) For CI/CD Pipeline, workflows
 ├── index.html          # Homepage https://kevin-jjang.github.io/AlchemyUCSD/
 ├── issues.html         # Issues Page
 ├── submissions.html    # Submissions Page
 ├── team.html           # Meet the Team Page
 ├── about.html          # Contact Us Page
-├── _config.yml         # 
-├── Gemfile             # 
+├── 404.html            # 404 Not Found Page
+├── _config.yml         # (Update every issue)
+├── Gemfile             # (Ignore)
 ```
 ## Creating the Next Issue
-The folder `_term##` should not be modified and instead duplicated as a new folder. It contains an HTML page for the cover art and the Letter from the Editor for easy setup.
+The folder `_temp00` is a template issue. It should not be modified and instead duplicated as a new folder. It contains an HTML page for the cover art and the Letter from the Editor for easy setup.

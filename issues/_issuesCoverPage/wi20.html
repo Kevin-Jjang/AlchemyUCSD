@@ -1,16 +1,16 @@
 ---
 layout: coverPage 
-title: Winter 2021
+title: Summer 2020
 ---
-{% assign cover = site.wi21 | where: "type", "Cover Art" %}
-{% assign letter = site.wi21 | where: "type", "Letter from the Editor" %}
-{% assign poems = site.wi21 | where: "type", "Poetry" %}
-{% assign prose = site.wi21 | where: "type", "Prose" %}
-{% assign art = site.wi21 | where: "type", "Art" %}
+{% assign cover = site.wi20 | where: "type", "Cover Art" %}
+{% assign letter = site.wi20 | where: "type", "Letter from the Editor" %}
+{% assign poems = site.wi20 | where: "type", "Poetry" %}
+{% assign prose = site.wi20 | where: "type", "Prose" %}
+{% assign art = site.wi20 | where: "type", "Art" %}
 
 {% for cover in cover %}
     <div class="post">
-        <a href="{{ site.baseurl }}{{ cover.url }}">"{{ cover.mainTitle }}" - by {{ cover.author }}</a>
+        <strong>Cover Art</strong><a href="{{ site.baseurl }}{{ cover.url }}">"{{ cover.mainTitle }}" - by {{ cover.author }}</a>
     </div><br>
 {% endfor %}
 

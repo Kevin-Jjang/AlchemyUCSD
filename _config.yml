@@ -29,23 +29,22 @@ url: "https://kevin-jjang.github.io" # the base hostname & protocol for your sit
 twitter_username: alchemyjournal
 github_username:  Kevin-Jjang
 
+collections_dir: "issues"
 collections:
   issuesCoverPage: 
     permalink: "/issues/:path"
     output: true
   wi21:
-    permalink: "/issues/wi21/:path"
+    permalink: "issues/:collection/:path"
     output: true
-
-defaults:
-  - scope:
-      path: ""
-    values:
-      layout: "default"
+  su20:
+    permalink: "issues/:collection/:path"
+    output: true
 
 # Build settings
 plugins:
   - jekyll-feed
+  - jekyll-include-cache
   - jekyll-sitemap
   - jekyll-seo-tag
 

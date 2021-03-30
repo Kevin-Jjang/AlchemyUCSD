@@ -382,7 +382,7 @@ pre {
 .bio {
     margin-left: auto;
     margin-right: auto;
-    max-width: 800px;
+    max-width: 900px;
 }
 
 
@@ -409,6 +409,13 @@ pre {
     text-align: center;
 }
 
+.italics {
+    font-style: italic;
+}
+
+.oblique {
+    font-style: oblique;
+}
 .gallery {
     display: block;
     box-sizing: border-box;
