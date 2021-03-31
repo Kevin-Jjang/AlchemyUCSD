@@ -4,14 +4,14 @@ title: Winter 2021
 homepage: true
 ---
 
-{% assign cover = site.wi21 | where: "type", "Cover Art" %}
+{% assign coverArt = site.wi21 | where: "type", "Cover Art" %}
 {% assign letter = site.wi21 | where: "type", "Letter from the Editor" %}
 {% assign poems = site.wi21 | where: "type", "Poetry" %}
 {% assign prose = site.wi21 | where: "type", "Prose" %}
 {% assign art = site.wi21 | where: "type", "Art" %}
 
 <h2>Cover Art</h2>
-{% for cover in cover %}
+{% for cover in coverArt %}
     <div class="post">
         <a href="{{ site.baseurl }}{{ cover.url }}">"{{ cover.mainTitle }}" - by {{ cover.author }}</a>
     </div><br>

@@ -1,94 +1,146 @@
 - name: Winter 2021
   issueNo: 18
   theme: CORRESPONDENCE
-  coverImg: "/assets/img/wi21/Early spring.jpg"
+  coverImg: "/assets/img/wi21/Early-spring.jpg"
   alt: "Early spring - Tanbelia"
   subtitle: "«Early spring», slime on canvas, bas-relief, 70 x 80 cm (thickness 4 cm), 2020. Tanbelia (Tania Belashchuk)"
+  author: Tanbelia
   link: /issues/wi21
 - name: Summer 2020
   issueNo: 17
   theme: Unity in Crisis
-  coverImg: "/assets/img/wi21/Early spring.jpg"
-  alt: "Early spring - Tanbelia"
-  subtitle: "«Early spring», slime on canvas, bas-relief, 70 x 80 cm (thickness 4 cm), 2020. Tanbelia (Tania Belashchuk)"
+  coverImg: "/assets/img/su20/Blue-Mural.jpg"
+  alt: "Blue Mural - Michelle Brooks"
+  subtitle: '"Blue Mural" by Michelle Brooks'
+  author: Michelle Brooks
   link: /issues/su20
 - name: Winter 2020
   issueNo: 16
-  theme: 
-  coverImg: ""
+  theme: "Shift–"
+  coverImg: "/assets/img/wi20/The-Crowd.jpg"
+  alt: "The Crowd - Megan McNitt"
+  subtitle: '“The Crowd” by Megan McNitt'
+  author: Megan McNitt
   link: /issues/wi20
 - name: Summer 2019
   issueNo: 15
-  theme: 
-  coverImg: ""
-  link: 
+  theme: Sci Fi
+  coverImg: "/assets/img/su19/Cover-Evana-Salem.jpeg"
+  alt: "Cover Art by Evana Salem"
+  subtitle: 'Cover Art by Evana Salem'
+  author: Evana Salem
+  link: /issues/su19
 - name: Winter 2019
   issueNo: 14
-  theme: 
-  coverImg: ""
-  link: 
+  theme: oh, you!
+  coverImg: "/assets/img/wi19/Cover-Alejandra-Oropezo.png"
+  alt: "Cover Art by Alejandra Oropezo"
+  subtitle: 'Art by Alejandra Oropezo'
+  author: Alejandra Oropezo
+  link: /issues/wi19
 - name: Summer 2018
   issueNo: 13
-  theme: 
-  coverImg: ""
-  link: 
+  theme: (un) love
+  coverImg: "/assets/img/su18/Love-Sindhu-Thirumalaisamy.jpg"
+  alt: "Love by Sindhu Thirumalaisamy"
+  subtitle: 'Love by Sindhu Thirumalaisamy'
+  author: Sindhu Thirumalaisamy
+  link: /issues/su18
 - name: Winter 2017
   issueNo: 12
-  theme: 
-  coverImg: ""
-  link: 
+  theme: Myth
+  coverImg: "/assets/img/wi17/Cover-Katherine-Agard.jpg"
+  alt: "Cover Art by Katherine Agard"
+  subtitle: 'Cover Art by Katherine Agard'
+  author: Katherine Agard
+  link: /issues/wi17
 - name: Spring 2017
   issueNo: 11
-  theme: 
-  coverImg: ""
-  link: 
+  theme: Resistance
+  coverImg: "/assets/img/sp17/Cover-Charlztowndesign.jpg"
+  alt: "Cover Art by Charlztowndesign"
+  subtitle: '© Charlztowndesign'
+  author: Charlztowndesign
+  link: /issues/sp17
 - name: Fall 2016
   issueNo: 10
-  theme: 
-  coverImg: ""
-  link: 
+  theme: Clashing Cultures
+  coverImg: "/assets/img/fa16/Cover-Daniel-Lara-Cardona.jpg"
+  alt: "Cover Art by Daniel Lara Cardona"
+  subtitle: '© Daniel Lara Cardona'
+  author: Daniel Lara Cardona
+  link: /issues/fa16
 - name: Winter 2016
   issueNo: 9
   theme: 
-  coverImg: ""
-  link: 
+  coverImg: "/assets/img/wi16/Cover-Rebecca-Seaberry.jpg"
+  alt: "Cover Art by Rebecca Seaberry"
+  subtitle: 'Cover Art by Rebecca Seaberry'
+  author: Rebecca Seaberry
+  link: /issues/sp17
+
+
 - name: Summer 2015
   issueNo: 8
   theme: 
-  coverImg: ""
-  link: "/assets/pdf/Summer 2015 Issue 08.pdf"
+  coverImg: "/"
+  alt: ""
+  subtitle: ''
+  author:
+  link: "/assets/pdf/Summer2015Issue08.pdf"
 - name: Winter 2015
   issueNo: 7
   theme: Writing on the Streets
   coverImg: ""
-  link: "/assets/pdf/Winter 2015 Issue 07.pdf"
+  alt: ""
+  subtitle: ''
+  author:
+  link: "/assets/pdf/Winter2015Issue07.pdf"
 - name: Summer 2014
   issueNo: 6
   theme: Global Science Fiction
   coverImg: ""
-  link: "/assets/pdf/Summer 2014 Issue 06.pdf"
+  alt: ""
+  subtitle: ''
+  author:
+  link: "/assets/pdf/Summer2014Issue06.pdf"
 - name: Winter 2014
   issueNo: 5
   theme: 
   coverImg: ""
-  link: "/assets/pdf/Winter 2014 Issue 05.pdf"
+  alt: ""
+  subtitle: ''
+  author:
+  link: "/assets/pdf/Winter2014Issue05.pdf"
 - name: Summer 2013
   issueNo: 4
   theme: 
   coverImg: ""
-  link: "/assets/pdf/Summer 2013 Issue 04.pdf"
+  alt: ""
+  subtitle: ''
+  author:
+  link: "/assets/pdf/Summer2013Issue04.pdf"
 - name: Spring 2013
   issueNo: 3
   theme: 
   coverImg: ""
-  link: "/assets/pdf/Summer 2013 Issue 03.pdf"
+  alt: ""
+  subtitle: ''
+  author:
+  link: "/assets/pdf/Summer2013Issue03.pdf"
 - name: Summer 2012
   issueNo: 2
   theme: 
   coverImg: ""
-  link: "/assets/pdf/Summer 2012 Issue 02.pdf"
+  alt: ""
+  subtitle: ''
+  author:
+  link: "/assets/pdf/Summer2012Issue02.pdf"
 - name: Spring 2012
   issueNo: 1
   theme: 
   coverImg: ""
-  link: "/assets/pdf/Summer 2012 Issue 01.pdf"
+  alt: ""
+  subtitle: ''
+  author:
+  link: "/assets/pdf/Summer2012Issue01.pdf"
