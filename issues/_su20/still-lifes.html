@@ -1,0 +1,121 @@
+---
+layout: default
+mainTitle: Still Lifes
+titles: 
+translators: ["Jack Kohler"]
+origTitles: [
+    'Agnes Martin<br><a href="https://www.guggenheim.org/audio/track/agnes-martin-the-islands-i-xii-1979">The Islands</a>, 1979<br>Oil and graphite on canvas 72 x 72 in.<br> Courtesy of the Artist', 
+    'Charles Ethan Porter<br><a href="https://americanart.si.edu/artwork/mountain-laurel-43991">Mountain Laurel</a>, 1888<br>Oil on canvas 20 x 24 1/8 in.<br>Smithsonian American Art Museum', 
+    'Wolfgang Tillmans<br><a href="https://www.philamuseum.org/collections/permanent/326362.html">Nachtstilleben (Night Still Life)</a>, 2013<br>Chromogenic print 53 1/8 × 6 ft. 7 3/4 in.']
+originalAuthor:
+type: Poetry
+tag: ekphrastic
+classes: rightToLeft
+
+translatorBio: "<strong>Jack Kohler</strong> is a poet and translator from Columbia, Missouri. After graduating from the Iowa Writers’ Workshop in spring 2020, he is now a freelance writer and critic in St. Louis. During the pandemic he began building a chicken coop."
+
+excerpt_separator: "<!-- break -->"
+---
+
+<h1>{{ page.mainTitle }}</h1>
+<h3>Translated by {{ page.translators }}</h3>
+<h3>{{ page.tag | capitalize }} Poetry</h3>
+
+<h2 class="{{ page.classes }}">{{ page.origTitles[0] }}</h2>
+<p class="text">
+     A<br>
+     spreadsheet<br>
+     for desertification.<br><br>
+     An<br>
+     uncontrollable process<br>
+     processed through,<br>
+     Like a cliff face which just now buckled.<br><br>
+     But always unfinished!
+</p>
+<hr>
+
+<h2 class="{{ page.classes }}">{{ page.origTitles[1] }}</h2>
+<pre class="text">
+     Even the green ones<br>
+Wilt some.<br>
+     Their<br>
+Suckers<br>
+     Don’t speak<br>
+They mouth.<br>
+     They eye.<br>
+Out of what vengeance?<br>
+     Secret,<br>
+Silent,<br>
+     Glass bloom—<br>
+Rounder,<br>
+     Down into itself<br>
+Drops:<br>
+     Sphinx.
+</pre>
+<hr>
+
+<h2 class="{{ page.classes }}">{{ page.origTitles[2] }}</h2>
+<ol class="text">
+     <li>Evidence.</li>
+     <li>Soil fertilizer and hardy bulb.</li>
+     <li>Bric-à-brac, origin unknown.</li>
+     <li>Reads “The Rings of Saturn.”</li>
+     <li>Remains of cherry pie.</li>
+     <li>$.55, no origin.</li>
+     <li>Dry spring, calendula.</li>
+     <li>Fig. 3. w/ cigarillos.</li>
+     <li>Exterior: debris.</li>
+     <li>Kitchen TV, paused: Channel 03</li>
+     <li>Debris (detail.)</li>
+     <li>London, night.</li>
+     <li>Contraband.</li>
+     <li>Reads: “Postponed breakfast til [sic] 12”.</li>
+     <li>Dry sprigs, unknown origin.</li>
+     <li>Pencil drawings (tornado, cube, etc.)</li>
+     <li>Digital scale.</li>
+     <li>[Illegible]ICE DAY!</li>
+     <li>Opaque unbranded bar soap.</li>
+     <li>Ductwork.</li>
+     <li>Batteries x4.</li>
+     <li>$2.30.</li>
+     <li>Fig. 4, Evidence.</li>
+     <li>Radiator, matte white, Trane brand.</li>
+     <li>Mastercard Diamond.</li>
+     <li>Acetylene torch (disassembled).</li>
+     <li>Orange plastic cup; sprigs of calendula.</li>
+     <li>Mass of string x3.</li>
+     <li>Carpenter’s square, unbranded.</li>
+     <li>Debris, wood shavings, dust.</li>
+     <li>Dust, etc.</li>
+     <li>Remote control, site of verifiable fingerprint.</li>
+     <li>Lip balm, cinnamon.</li>
+     <li>Evidence, out of sight.</li>
+     <li>Business card, reads: “Pip’s Baked Goods”.</li>
+     <li>Debris, soil.</li>
+     <li>Vermiculite (dispersed with soil).</li>
+     <li>Egg.</li>
+     <li>American Express Vista credit card.</li>
+     <li>Chemicals (source unknown).</li>
+     <li>Data.</li>
+     <li>Eggshells.</li>
+</ol>
+<hr>
+
+{% if page.translatorNote %}
+        <p class="bio">
+            <strong>Translator's Note</strong><br>
+            {{ page.translatorNote }}
+        </p>
+{% endif %}
+
+{% if page.translators.size == 1 %}
+    <p class="bio">
+        <strong>Translator's Biography</strong><br>
+        {{ page.translatorBio }}
+    </p>
+{% else %}
+    <p class="bio">
+        <strong>Translators' Biography</strong><br>
+        {{ page.translatorBio }}
+    </p>
+{% endif %}

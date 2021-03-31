@@ -18,8 +18,11 @@ anti-stress toy. The artist gave a new meaning to this viscous material, transla
 work on her website, Facebook, or Instagram at @tanbeliaart."
 ---
 
+{% assign issuesCover = site.data.issuesCoverPage | where: "author", "Tanbelia" %}
+
+{% for cover in issuesCover %}
 <div class="gallery frame">
-    <img src="{{ site.baseurl }}/assets/img/wi21/Early spring.jpg" alt="Early spring - Tanbelia">
-    <p class="subtitle">«Early spring», slime on canvas, bas-relief, 70 x 80 cm (thickness 4 cm), 2020. Tanbelia (Tania
-        Belashchuk)</p>
+    <img src="{{ site.baseurl }}{{ cover.coverImg }}" alt="{{ cover.alt }}">
+    <p class="subtitle">{{ cover.subtitle }}</p>
 </div>
+{% endfor %}
