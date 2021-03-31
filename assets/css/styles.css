@@ -37,24 +37,30 @@ nav {
     margin-right: auto;
     width: fit-content;
     text-align: center;
-    font-size: 1.25em;
+    font-size: 1.25rem;
     background-color: #ffe5b679;
-}
-
-.navbar a {
-    display: inline-block;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 3px;
-    padding-bottom: 2px;
-    border-bottom: 2px solid black;
     color: white;
-    text-decoration: none;
-
 }
 
-.navbar a:hover {
-    background-color: #ffe5b6;
+nav ul {
+    padding: 0rem;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+nav ul li {
+    display: inline-block;
+    padding: 8px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    border-bottom: 2px solid transparent;
+    transition: 0.2s ease-in border-bottom;
+}
+
+nav ul li a:hover {
+    border-bottom: 2px solid black;
 }
 
 /* ---------------------------------------
@@ -439,4 +445,12 @@ pre {
     margin-left: auto;
     margin-right: auto;
     width: fit-content;
+}
+
+.marginbs0 {
+    margin-block-start: 0rem;
+}
+
+.marginbe0 {
+    margin-block-end: 0rem;
 }

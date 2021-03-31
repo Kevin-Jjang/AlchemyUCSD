@@ -2,19 +2,21 @@
 layout: default
 title: Issues
 ---
-
 <ul>
     {% for issue in site.data.issuesCoverPage %}
     <li class="issueBox">
-        <img class="coverImage" src="{{ site.baseurl }}{{ issue.coverImg }}">
+        {% unless issue.link contains ".pdf" %}
+            <img class="coverImage" src="{{ site.baseurl }}{{ issue.coverImg }}">
+        {% endunless %}
+
         <div class="issueInfo">
             <p class="issueNum">Issue {{ issue.issueNo }}</p>
             <p class="issueTitle">{{ issue.name }}</p>
             <p class="issueTheme">{{ issue.theme }}</p>
             {% if issue.link contains ".pdf" %}
-            <a href="{{ site.baseurl }}{{ issue.link }}" target="_blank">Read Here (pdf)</a>
+                <a href="{{ site.baseurl }}{{ issue.link }}" target="_blank">Read Here (pdf)</a>
             {% else %}
-            <a href="{{ site.baseurl }}{{ issue.link }}">Read Here</a>
+                <a href="{{ site.baseurl }}{{ issue.link }}">Read Here</a>
             {% endif %}
         </div>
     </li>
@@ -27,5 +29,5 @@ title: Issues
     <ul>
         <li>{{ tag[0] }} ({{ tag[1].size }})</li>
     </ul>
-    {% endfor %}    
+    {% endfor %}
 </aside>

@@ -1,0 +1,22 @@
+---
+layout: art
+mainTitle: Blue Mural
+author: Michelle Brooks
+type: Cover Art
+
+note:
+
+bio: "<strong>Michelle Brooks </strong>has published a collection of poetry, <em>Make Yourself Small</em> (Backwaters Press),
+and a novella, <em>Dead Girl, Live Boy</em> (Storylandia Press). Her poetry collection, <em>Pretty in A Hard Way</em>,
+was published by Finishing Line Press in 2019. Her collection, <em>The Pretend Life</em>, was published by Atmosphere Press in February 2020. 
+Her work has been published or is forthcoming in <em>The Threepenny Review</em>, <em>Alaska Quarterly Review</em>, <em>Iowa Review</em>,
+<em>Hayden’s Ferry Review</em>, <em>Natural Bridge</em>, and elsewhere. A native Texan, she has spent much of her adult life in Detroit."
+---
+{% assign issuesCover = site.data.issuesCoverPage | where: "author", "Michelle Brooks" %}
+
+{% for cover in issuesCover %}
+<div class="gallery frame">
+    <img src="{{ site.baseurl }}{{ cover.coverImg }}" alt="{{ cover.alt }}">
+    <p class="subtitle">{{ cover.subtitle }}</p>
+</div>
+{% endfor %}
